@@ -1,47 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     jawascript start
     <button onclick="hello">submit</button>
-    <script>
-      
-      //find age 
-       Birthyear = 2006;
-       currentyear = 2025;
-       age = currentyear-Birthyear;
-       console.log(age);
-//     find interest
-       interestamount = 10000;
-       duration = 3;
-       interestrate = 2;
-       interest = interestamount*(interestrate/100);
-       totalamount = interestamount+interest;
-       console.table([interest,totalamount]);
-     // find velocity of car
-       distance = 20;
-       time =30;
-       velocity = distance/time;
-       console.log(velocity);
-        
-       // find compound interest
+    <script src="index.js">
+              //find age
+               Birthyear = 2006;
+               currentyear = 2025;
+               age = currentyear-Birthyear;
+               console.log(age);
+        //     find interest
+               interestamount = 10000;
+               duration = 3;
+               interestrate = 2;
+               interest = interestamount*(interestrate/100);
+               totalamount = interestamount+interest;
+               console.table([interest,totalamount]);
+             // find velocity of car
+               distance = 20;
+               time =30;
+               velocity = distance/time;
+               console.log(velocity);
 
-           principal = 1000; // Initial deposit
-           annualInterestRate = 5; // 5% annual interest rate
-           compoundingPeriods = 12; // Compounded monthly
-           timeInYears = 10; // 10 years
+               // find compound interest
 
-           interest = 1000*(5/100);
-           finalamount = principal*1+interest/compoundingPeriods^compoundingPeriods*timeInYears;
-           
-              console.log(finalamount);
-              
-       
-        
+                   principal = 1000; // Initial deposit
+                   annualInterestRate = 5; // 5% annual interest rate
+                   compoundingPeriods = 12; // Compounded monthly
+                   timeInYears = 10; // 10 years
+
+                   interest = 1000*(5/100);
+                   finalamount = principal*1+interest/compoundingPeriods^compoundingPeriods*timeInYears;
+
+                      console.log(finalamount);
+
+          age = 23;
+          if( age <= 23){
+               alert("you are eligible");
+          }
+
+         dateOfBirth = 12;
+         if(dateOfBirth == 12 ){
+          alert("happy birthday");
+         }
+
+        intialAmount = 1000;
+        interestrate = 20;
+        time = 2; //year
+        interest = intialAmount * (interestrate / 100);
+        totalinteset = interest * 2;
+        simpleintetrest = interest + totalinteset;
+        if (simpleintetrest > 1500) {
+          alert("this is cenceled");
+          console.log(simpleintetrest);
+        } else {
+          alert("this is approved");
+        }
+
+
+      myObtPercentage = 59; //percent
+      if(myObtPercentage >= 95){
+        alert("A grade")
+      }else if (myObtPercentage >= 90 ){
+          alert("B grade");
+      }
+      else if (myObtPercentage >= 80 ){
+          alert("C grade");
+      }
+      else if (myObtPercentage >= 70 ){
+          alert("D grade");F
+      }
+      else if (myObtPercentage >= 60 ){
+          alert("E grade");
+      }else{
+         alert("pass");
+      }
+
+
+
+      number = 0;
+      if(number > 0 ){
+        alert("this positive number")
+      }else if(number < 0 ){
+        alert("this negative number")
+      }else{
+         alert("zero")
+      }
+
+
+
+      for (let i  = 100; i>=1; i--){
+        console.log(i);
+      }
+
+
+          number = 25;
+          if(number/number==1){
+            alert("prime")
+          }else{
+            alert(" not prime")
+          }
+
+
+          a = 3;
+          b = 4;
+          sum = a+b;
+          sub = a-b;
+          div = a/b;
+          mul= a*b;
+          console.log(sum,sub,div,mul);
     </script>
-</body>
+  </body>
 </html>
